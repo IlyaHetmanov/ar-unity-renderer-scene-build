@@ -1170,13 +1170,13 @@ var tempDouble;
 var tempI64;
 
 var ASM_CONSTS = {
- 2286392: function() {
+ 2287096: function() {
   return Module.webglContextAttributes.premultipliedAlpha;
  },
- 2286453: function() {
+ 2287157: function() {
   return Module.webglContextAttributes.preserveDrawingBuffer;
  },
- 2286517: function() {
+ 2287221: function() {
   return Module.webglContextAttributes.powerPreference;
  }
 };
