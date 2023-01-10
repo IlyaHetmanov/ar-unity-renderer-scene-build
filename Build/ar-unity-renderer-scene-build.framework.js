@@ -1171,13 +1171,13 @@ var tempDouble;
 var tempI64;
 
 var ASM_CONSTS = {
- 3291240: function() {
+ 3291256: function() {
   return Module.webglContextAttributes.premultipliedAlpha;
  },
- 3291301: function() {
+ 3291317: function() {
   return Module.webglContextAttributes.preserveDrawingBuffer;
  },
- 3291365: function() {
+ 3291381: function() {
   return Module.webglContextAttributes.powerPreference;
  }
 };
@@ -12268,7 +12268,6 @@ var asmLibraryArg = {
  "invoke_fifi": invoke_fifi,
  "invoke_fii": invoke_fii,
  "invoke_fiii": invoke_fiii,
- "invoke_fiiiffi": invoke_fiiiffi,
  "invoke_fiiii": invoke_fiiii,
  "invoke_fiiiii": invoke_fiiiii,
  "invoke_i": invoke_i,
@@ -12634,8 +12633,6 @@ var dynCall_jijj = Module["dynCall_jijj"] = createExportWrapper("dynCall_jijj");
 
 var dynCall_iiiiiiiiii = Module["dynCall_iiiiiiiiii"] = createExportWrapper("dynCall_iiiiiiiiii");
 
-var dynCall_fiiiffi = Module["dynCall_fiiiffi"] = createExportWrapper("dynCall_fiiiffi");
-
 var dynCall_viiifii = Module["dynCall_viiifii"] = createExportWrapper("dynCall_viiifii");
 
 var dynCall_iiiiifiiii = Module["dynCall_iiiiifiiii"] = createExportWrapper("dynCall_iiiiifiiii");
@@ -12737,6 +12734,8 @@ var dynCall_viiiiffffiiii = Module["dynCall_viiiiffffiiii"] = createExportWrappe
 var dynCall_iiiiiiffiiiiiiiiiffffiiii = Module["dynCall_iiiiiiffiiiiiiiiiffffiiii"] = createExportWrapper("dynCall_iiiiiiffiiiiiiiiiffffiiii");
 
 var dynCall_iiiiiiffiiiiiiiiiiiiiii = Module["dynCall_iiiiiiffiiiiiiiiiiiiiii"] = createExportWrapper("dynCall_iiiiiiffiiiiiiiiiiiiiii");
+
+var dynCall_fiiiffi = Module["dynCall_fiiiffi"] = createExportWrapper("dynCall_fiiiffi");
 
 var dynCall_viffffiii = Module["dynCall_viffffiii"] = createExportWrapper("dynCall_viffffiii");
 
@@ -13872,17 +13871,6 @@ function invoke_iiiiiiiiii(index, a1, a2, a3, a4, a5, a6, a7, a8, a9) {
  var sp = stackSave();
  try {
   return dynCall_iiiiiiiiii(index, a1, a2, a3, a4, a5, a6, a7, a8, a9);
- } catch (e) {
-  stackRestore(sp);
-  if (e !== e + 0 && e !== "longjmp") throw e;
-  _setThrew(1, 0);
- }
-}
-
-function invoke_fiiiffi(index, a1, a2, a3, a4, a5, a6) {
- var sp = stackSave();
- try {
-  return dynCall_fiiiffi(index, a1, a2, a3, a4, a5, a6);
  } catch (e) {
   stackRestore(sp);
   if (e !== e + 0 && e !== "longjmp") throw e;
